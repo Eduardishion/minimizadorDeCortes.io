@@ -1,8 +1,18 @@
 
+function mostrarValores(){
+   //para obtener lso datos de las input de entrada 
+   let medidaEstandar = 	document.getElementById("medidaEstandar").value;
+   let cantidad = 	document.getElementById("cantidad").value;
+   let medida = 	document.getElementById("medida").value;
 
+   //para retornar en texto los datos procesados 
+   document.getElementById("valores").innerHTML = 'los valores son:'+medidaEstandar+" "+cantidad+" "+medida;
+  
+}
 
 function guardarEnTabla(cantidad , medidas) {
-
+   
+   mostrarValores();
    var canti = 	document.getElementById("cantidad").value;
    var tablaoriginal = document.getElementById("tablasMedidasAcortar");
    //alert("la cantidad es:"+canti);
